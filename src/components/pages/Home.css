@@ -1,0 +1,86 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--black);
+    background-image: url("../../assets/black-brick.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.main__img {
+    position: absolute;
+    width: auto;
+    margin-left: 20px;
+    right: 20px;
+    margin-right: auto;
+    filter: opacity(25%);
+    z-index: 5;
+}
+
+.pink-deco {
+    position: absolute;
+    background-color: var(--pink);
+    bottom: 0px;
+    right: 0px;
+    width: 200px;
+    height: 200px;
+    filter: blur(300px);
+    box-shadow: 0px 0px 600px var(--pink);
+
+    z-index: 1;
+}
+
+.aqua-deco {
+    position: absolute;
+    background-color: var(--aqua);
+    top: 0px;
+    width: 200px;
+    height: 200px;
+    filter: blur(300px);
+    box-shadow: 0px 0px 600px var(--aqua);
+
+
+}
+
+
+.main__desc {
+    color: var(--grey);
+    padding-left: 30px;
+    text-wrap: wrap;
+    max-width: 500px;
+    z-index: 6;
+}
+
+.main__connect {
+    color: var(--pink) !important;
+    margin: 30px;
+    width: max-content;
+    text-shadow: 0px 0px 20px var(--pink);
+    display: flex !important;
+    flex-direction: row;
+    z-index: 6;
+}
+
+.main__connect::before {
+    background-color: var(--pink) !important;
+}
+
+.mask {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../assets/name-back.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    mask-image: url("../../assets/name.png");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+}
