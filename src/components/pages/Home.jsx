@@ -19,9 +19,7 @@ function Home() {
                     <h3>Let's Connect </h3> <DoubleArrowIcon />
                 </a>
             </main>
-            <div className='mask'>
-
-            </div>
+            <div className='mask'></div>
         </div >
     )
 }
