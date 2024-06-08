@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './components/utils/Navbar'
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Routes,
     Route,
 } from "react-router-dom";
@@ -13,6 +13,7 @@ function App() {
                 <Navbar></Navbar>
                 <Routes>
                     <Route path="/" element={<Home />}></Route>
+                    <Route path="/study" element={<h1>Study</h1>}></Route>
                 </Routes>
             </Router>
         </div>

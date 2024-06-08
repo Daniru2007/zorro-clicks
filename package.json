@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://daniru2007.github.io/zorro-clicks",
+  "homepage": "http://daniru2007.github.io/zorro-clicks/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -19,7 +19,8 @@
     "@mui/material": "^5.15.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.23.1"
+    "react-router-dom": "^6.23.1",
+    "swiper": "^11.1.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
