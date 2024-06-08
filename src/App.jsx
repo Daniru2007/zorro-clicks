@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './components/utils/Navbar'
 import {
-    HashRouter as Router,
+    BrowserRouter as Router,
     Routes,
     Route,
 } from "react-router-dom";
