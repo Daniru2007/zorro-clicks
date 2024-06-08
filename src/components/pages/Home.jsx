@@ -13,6 +13,8 @@ import 'swiper/css/effect-cube';
 import 'swiper/css/pagination';
 import { red } from '@mui/material/colors';
 
+import zorro from "../../assets/zorro.png"
+
 function Home() {
     return (
         <div>
@@ -22,7 +24,7 @@ function Home() {
                 />
                 <p className='main__desc'>I wield my camera as a painter's brush, transforming the ordinary into the extraordinary and
                     inviting the viewer on a journey of renewed discovery and appreciation.</p>
-                <img src="/src/assets/zorro.png" className='main__img' />
+                <img src={zorro} className='main__img' />
                 <div className='deco pink-deco'></div>
                 <div className='deco aqua-deco'></div>
                 <a href="" className="link main__connect">
