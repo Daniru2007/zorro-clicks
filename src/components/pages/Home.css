@@ -136,7 +136,7 @@
     z-index: 10;
     text-align: center;
     color: gradient;
-    background: -webkit-linear-gradient(var(--green), var(--dark));
+    background: -webkit-linear-gradient(var(--green), var(--white));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
