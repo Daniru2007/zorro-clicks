@@ -19,6 +19,7 @@
 
 body {
     background-color: var(--black);
+    overflow-x: hidden;
 }
 
 .link {

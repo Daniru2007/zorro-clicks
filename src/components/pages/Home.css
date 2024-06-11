@@ -72,8 +72,9 @@
 }
 
 .mask {
-    width: 100vw;
+    width: auto;
     height: 100vh;
+    margin: 0px 50px;
     background-image: url("../../assets/name-back.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -89,25 +90,53 @@
     width: 100vw;
     height: 100vh;
     background-color: var(--dark);
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 .swiper {
     width: 300px;
     height: 300px;
+    margin-top: 100px;
+    z-index: 2;
+    flex-grow: 1;
 }
 
 
 .swiper-slide {
     background-position: center;
     background-size: cover;
+    overflow: hidden;
 }
 
 .swiper-slide img {
     display: block;
-    width: 100%;
+    width: auto;
+    height: 100%;
 }
 
 .wild-life>.swiper-wrapper>.swiper-cube-shadow {
     background-color: var(--green);
     box-shadow: 0px 0px 500px var(--green);
+}
+
+
+.wave {
+
+    height: 100%;
+    min-width: 500px;
+    z-index: 0;
+}
+
+.caption {
+    margin-top: 20px;
+    z-index: 10;
+    text-align: center;
+    color: gradient;
+    background: -webkit-linear-gradient(var(--green), var(--dark));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

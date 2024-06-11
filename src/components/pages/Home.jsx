@@ -14,6 +14,9 @@ import 'swiper/css/pagination';
 import { red } from '@mui/material/colors';
 
 import zorro from "../../assets/zorro.png"
+import Svg from "../../assets/test.svg"
+
+import wild1 from "../../assets/wild-life/wild-1.jpg"
 
 function Home() {
     return (
@@ -48,7 +51,7 @@ function Home() {
                     className="wild-life"
                 >
                     <SwiperSlide>
-                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                        <img src={wild1} />
                     </SwiperSlide>
                     <SwiperSlide>
                         <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
@@ -60,7 +63,11 @@ function Home() {
                         <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
                     </SwiperSlide>
                 </Swiper>
+
+                <h1 className='caption'>Wild Life Photography</h1>
+                <object className='wave' type='image/svg+xml' data={Svg}></object>
             </div>
+            <div style={{ "height": "100vh" }}></div>
         </div >
     )
 }
