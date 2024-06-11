@@ -5,7 +5,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, EffectCube } from "swiper/modules";
+import { Navigation, Pagination, EffectCube, EffectCards } from "swiper/modules";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -14,7 +14,8 @@ import 'swiper/css/pagination';
 import { red } from '@mui/material/colors';
 
 import zorro from "../../assets/zorro.png"
-import Svg from "../../assets/test.svg"
+import wildSvg from "../../assets/wild-life.svg"
+import portraitSvg from "../../assets/portrait.svg"
 
 import wild1 from "../../assets/wild-life/wild-1.jpg"
 
@@ -65,9 +66,40 @@ function Home() {
                 </Swiper>
 
                 <h1 className='caption'>Wild Life Photography</h1>
-                <object className='wave' type='image/svg+xml' data={Svg}></object>
+                <object className='wave' type='image/svg+xml' data={wildSvg}></object>
             </div>
-            <div style={{ "height": "100vh" }}></div>
+            <div className='portrait-wrapper'>
+                <Swiper
+                    effect={'cube'}
+                    grabCursor={true}
+                    navigation
+                    cubeEffect={{
+                        shadow: true,
+                        slideShadows: true,
+                        shadowOffset: 20,
+                        shadowScale: 0.94,
+                    }}
+                    pagination={true}
+                    modules={[EffectCube, Pagination]}
+                    className="portrait"
+                >
+                    <SwiperSlide>
+                        <img src={wild1} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                    </SwiperSlide>
+                </Swiper>
+                <h1 className='caption1'>Portrait Photography</h1>
+                <object className='wave' type='image/svg+xml' data={portraitSvg}></object>
+
+            </div>
         </div >
     )
 }

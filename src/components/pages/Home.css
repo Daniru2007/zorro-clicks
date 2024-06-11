@@ -95,9 +95,14 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    background-image: url("../../assets/wild-life/back.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-.swiper {
+.wild-life.swiper {
     width: 300px;
     height: 300px;
     margin-top: 100px;
@@ -106,13 +111,14 @@
 }
 
 
-.swiper-slide {
+.wild-life .swiper-slide {
     background-position: center;
     background-size: cover;
     overflow: hidden;
+    border-radius: 20px;
 }
 
-.swiper-slide img {
+.wild-life .swiper-slide img {
     display: block;
     width: auto;
     height: 100%;
@@ -121,11 +127,11 @@
 .wild-life>.swiper-wrapper>.swiper-cube-shadow {
     background-color: var(--green);
     box-shadow: 0px 0px 500px var(--green);
+    border-radius: 50px;
 }
 
 
 .wave {
-
     height: 100%;
     min-width: 500px;
     z-index: 0;
@@ -137,6 +143,123 @@
     text-align: center;
     color: gradient;
     background: -webkit-linear-gradient(var(--green), var(--white));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* .portrait-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.portrait.swiper {
+    width: 300px;
+    height: 320px;
+}
+
+.portrait .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.swiper-slide:nth-child(1n) {
+    background-color: rgb(206, 17, 17);
+}
+
+.swiper-slide:nth-child(2n) {
+    background-color: rgb(0, 140, 255);
+}
+
+.swiper-slide:nth-child(3n) {
+    background-color: rgb(10, 184, 111);
+}
+
+.swiper-slide:nth-child(4n) {
+    background-color: rgb(211, 122, 7);
+}
+
+.swiper-slide:nth-child(5n) {
+    background-color: rgb(118, 163, 12);
+}
+
+.swiper-slide:nth-child(6n) {
+    background-color: rgb(180, 10, 47);
+}
+
+.swiper-slide:nth-child(7n) {
+    background-color: rgb(35, 99, 19);
+}
+
+.swiper-slide:nth-child(8n) {
+    background-color: rgb(0, 68, 255);
+}
+
+.swiper-slide:nth-child(9n) {
+    background-color: rgb(218, 12, 218);
+}
+
+.swiper-slide:nth-child(10n) {
+    background-color: rgb(54, 94, 77);
+} */
+
+.portrait-wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--black);
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url("../../assets/portraits/back.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.portrait.swiper {
+    width: 300px;
+    height: 300px;
+    margin-top: 100px;
+    z-index: 2;
+    flex-grow: 1;
+}
+
+
+.portrait .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.portrait .swiper-slide img {
+    display: block;
+    width: auto;
+    height: 100%;
+}
+
+.portrait>.swiper-wrapper>.swiper-cube-shadow {
+    background-color: var(--aqua);
+    box-shadow: 0px 0px 500px var(--aqua);
+    border-radius: 50px;
+}
+
+.caption1 {
+    margin-top: 20px;
+    z-index: 10;
+    text-align: center;
+    color: gradient;
+    background: -webkit-linear-gradient(var(--aqua), var(--white));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
